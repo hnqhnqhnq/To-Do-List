@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head> 
+<body>
+    <div class="container">
+        <div class="create-task">
+            <h1 class="create-task-title">Create Task</h1>
+            <form class="info-task">
+                <input type="text" id="task-name" name="task-name" placeholder="Task Name">
+                <div class="from-to">
+                    <div class="from">
+                        <label for="from-time">From</label>
+                        <input type="time" id="from-time">
+                    </div>
+                    <div class="to">
+                        <label for="to-time">To</label>
+                        <input type="time" id="to-time">   
+                    </div>
+                </div>
+                <button type="button" id="submit">Create Task</button>
+            </form>
+        </div>
+        <div class="tasks">
+            <h1 class="tasks-title">Tasks</h1>
+            <ul class="tasks-list"></ul>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
